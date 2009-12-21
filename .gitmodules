@@ -1,0 +1,21 @@
+[submodule "hobo"]
+	path = hobo
+	url = git://github.com/tablatom/hobo
+[submodule "agility"]
+	path = agility
+	url = git://github.com/tablatom/agility
+[submodule "agility-2.3"]
+	path = agility-2.3
+	url = git://github.com/tablatom/agility
+[submodule "agility-jruby"]
+	path = agility-jruby
+	url = git://github.com/tablatom/agility.git
+[submodule "rubydoctest"]
+	path = rubydoctest
+	url = git://github.com/bryanlarsen/rubydoctest
+[submodule "agility-1.9"]
+	path = agility-1.9
+	url = git://github.com/tablatom/agility.git
+[submodule "hobo-test"]
+	path = hobo-test
+	url = git://github.com/bryanlarsen/hobo-test
