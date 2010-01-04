@@ -3,6 +3,8 @@
 set -e
 set -x
 
+VERSION=0.9.103
+
 cd hobo/hobo
 rake build
 cd ../hobofields
@@ -11,8 +13,12 @@ cd ../hobosupport
 rake build
 cd ..
 
-sudo gem install --no-rdoc --no-ri hobosupport/pkg/*.gem hobofields/pkg/*.gem hobo/pkg/*.gem
-rm hobosupport/pkg/*.gem hobofields/pkg/*.gem hobo/pkg/*.gem
+sudo gem uninstall hobo -x -v ${VERSION}
+sudo gem uninstall hobofields -x -v ${VERSION} 
+sudo gem uninstall hobosupport -x -v ${VERSION}
+
+sudo gem install --no-rdoc --no-ri hobosupport/pkg/hobosupport-${VERSION}.gem hobofields/pkg/hobofields-${VERSION}.gem hobo/pkg/hobo-${VERSION}.gem
+rm hobosupport/pkg/hobosupport-${VERSION}.gem hobofields/pkg/hobofields-${VERSION}.gem hobo/pkg/hobo-${VERSION}.gem
 
 cd ..
 hobo smoke
