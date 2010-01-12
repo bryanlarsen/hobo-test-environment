@@ -39,3 +39,12 @@ for mysql.
 After cloning this environment and installing ruby1.9.1 and jruby, run
 the setup.sh script.
 
+    ./setup.sh
+
+And then you can run the tests:
+
+    ./test_all.sh
+
+or
+
+    ./smoke_test.sh

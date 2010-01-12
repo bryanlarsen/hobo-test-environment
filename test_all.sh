@@ -25,7 +25,7 @@ cd ../agility             ; integration ruby
 cd ../agility             ; acceptance ruby ruby
 cd ../hobo                ; jruby -S rake --trace test_all
 cd ../hobo                ; ruby1.9.1 -S rake --trace test_all
-cd ../agility-jruby       ; integration jruby
+cd ../agility-jruby       ; integration jruby jruby
 cd ../agility-1.9/vendor/plugins; ln -sf ../nested_scenarios.git nested_scenarios ; cd ../..
 cd ../agility-1.9         ; integration ruby1.9.1
 cd ../hobo-test           ; integration ruby ruby
