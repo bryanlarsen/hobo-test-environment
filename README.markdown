@@ -1,6 +1,10 @@
 This is the system test environment for
 [Hobo](http://github.com/tablatom/hobo).
 
+It's mostly a bunch of git submodules, so make sure to install them:
+
+    git submodule update --init
+
 This environment was designed for Ubuntu.  It will probably work on
 any Linux, and may work on OS X and definitely will not work on
 Windows.
