@@ -37,5 +37,6 @@ cd ../agility-jruby       ; acceptance jruby ruby
 rm -f ../agility-1.9/vendor/plugins/nested_scenarios
 cd ../agility-1.9          ; acceptance ruby1.9.1 ruby1.9.1
 #cd ../agility-jquery      ; acceptance
+cd ../agility-mysql        ; acceptance ruby ruby
 
 echo "DONE!"

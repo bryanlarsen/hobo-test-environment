@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-set -e
 set -x
 
-VERSION=0.9.103
+gem uninstall hobo -x
+gem uninstall hobofields -x
+gem uninstall hobosupport -x
 
 cd hobo/hobo
 rake build
@@ -13,11 +14,11 @@ cd ../hobosupport
 rake build
 cd ..
 
-sudo gem uninstall hobo -x -v ${VERSION}
-sudo gem uninstall hobofields -x -v ${VERSION} 
-sudo gem uninstall hobosupport -x -v ${VERSION}
+set -e
 
-sudo gem install --no-rdoc --no-ri hobosupport/pkg/hobosupport-${VERSION}.gem hobofields/pkg/hobofields-${VERSION}.gem hobo/pkg/hobo-${VERSION}.gem
+VERSION=1.0.0
+
+gem install --no-rdoc --no-ri hobosupport/pkg/hobosupport-${VERSION}.gem hobofields/pkg/hobofields-${VERSION}.gem hobo/pkg/hobo-${VERSION}.gem
 rm hobosupport/pkg/hobosupport-${VERSION}.gem hobofields/pkg/hobofields-${VERSION}.gem hobo/pkg/hobo-${VERSION}.gem
 
 cd ..
@@ -43,3 +44,4 @@ rm -rf smoke
 kill $pid || true
 sleep 1
 kill -9 $pid || true
+exit 0

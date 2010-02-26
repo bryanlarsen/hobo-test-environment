@@ -19,3 +19,6 @@
 [submodule "hobo-test"]
 	path = hobo-test
 	url = git://github.com/bryanlarsen/hobo-test
+[submodule "agility-mysql"]
+	path = agility-mysql
+	url = git://github.com/tablatom/agility.git
