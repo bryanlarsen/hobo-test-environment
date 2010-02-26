@@ -18,30 +18,30 @@ probably want to install some libraries before the rubies.
 
 So it might go something like this after rvm is installed:
 
-   rvm install readline
-   rvm install openssl
-   rvm install iconv
-   rvm install zlib
-   rvm install 1.8.7
-   rvm install 1.9.1 -C --with-readline-dir=$rvm_path/usr
-   rvm install jruby
+    rvm install readline
+    rvm install openssl
+    rvm install iconv
+    rvm install zlib
+    rvm install 1.8.7
+    rvm install 1.9.1 -C --with-readline-dir=$rvm_path/usr
+    rvm install jruby
 
 Now import all of the gems required for each ruby.
 
-   ./rvm-import.sh
+    ./rvm-import.sh
 
 It may fail on rubydoctest.  If so:
 
-   cd rubydoctest
-   rake gem
-   rvm use 1.8.7%rails2.2
-   gem install pkg/rubydoctest-1.1.3.gem
-   rvm use 1.8.7%rails2.3
-   gem install pkg/rubydoctest-1.1.3.gem
-   rvm use 1.9.1%rails2.3
-   gem install pkg/rubydoctest-1.1.3.gem
-   rvm use jruby%rails2.3
-   gem install pkg/rubydoctest-1.1.3.gem
+    cd rubydoctest
+    rake gem
+    rvm use 1.8.7%rails2.2
+    gem install pkg/rubydoctest-1.1.3.gem
+    rvm use 1.8.7%rails2.3
+    gem install pkg/rubydoctest-1.1.3.gem
+    rvm use 1.9.1%rails2.3
+    gem install pkg/rubydoctest-1.1.3.gem
+    rvm use jruby%rails2.3
+    gem install pkg/rubydoctest-1.1.3.gem
 
 This environment assumes that you have no password for root@localhost
 for mysql.   (If that is the case, it would be useful to ensure that
