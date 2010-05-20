@@ -22,3 +22,6 @@
 [submodule "agility-mysql"]
 	path = agility-mysql
 	url = git://github.com/tablatom/agility.git
+[submodule "agility-xss"]
+	path = agility-xss
+	url = git://github.com/tablatom/agility.git

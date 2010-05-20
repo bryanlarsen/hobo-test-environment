@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set +x
+
 rubies=( 1.8.7%rails2.2 1.8.7%rails2.3 1.9.1%rails2.3 jruby%rails2.3 )
 
 for spec in ${rubies[@]} ; do

@@ -16,7 +16,7 @@ cd ..
 
 set -e
 
-VERSION=1.0.0
+VERSION=1.0.1
 
 gem install --no-rdoc --no-ri hobosupport/pkg/hobosupport-${VERSION}.gem hobofields/pkg/hobofields-${VERSION}.gem hobo/pkg/hobo-${VERSION}.gem
 rm hobosupport/pkg/hobosupport-${VERSION}.gem hobofields/pkg/hobofields-${VERSION}.gem hobo/pkg/hobo-${VERSION}.gem
